@@ -1,1 +1,112 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Welcome to BurgerHeaven Online</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to BurgerHeaven Online</h1>
+    </header>
+
+    <h2>Select burger</h2>
+    <p>This is where you can select your burger.</p>
+
+    <main>
+        <div style="display:flex; justify-content:space-around;">
+
+            <section>
+                <h3>The Fire Burger</h3>
+                <img src="./public/img/burger1.jpg" width="250">
+                <ul>
+                    <li>Kobe beef of the highest quality</li>
+                    <li>Covered in fancy cheese (contains lactose)</li>
+                    <li>Cold-leavened sourdough bread (contains gluten)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Fried Turkey Burger</h3>
+                <img src="./public/img/burger2.jpg" width="250">
+                <ul>
+                    <li>Deep fried Turkish turkey</li>
+                    <li>A slice of pink stuff (contains lactose)</li>
+                    <li>Shake-n-bake gluten-free bread</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>A Double w/ Cheese</h3>
+                <img src="./public/img/Fried Turkey Burger.webp" width="250">
+                <ul>
+                    <li>Two layers of pure meat</li>
+                    <li>Lots of yummy cheese (contains lactose)</li>
+                    <li>Sweet bread bun (contains gluten)</li>
+                </ul>
+            </section>
+        </div>
+        <h2>Customer information</h2>
+        <p>This is where you execute burger selection</p>
+        <h2>Delivery information</h2>
+        <section id="contact">
+            <form>
+                <p>
+                    <label for="firstname">Full name</label><br>
+                    <input type="text" id="fullname" name="fullname" required="required"
+                        placeholder="First and Last name">
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="text" id="email" name="email" placeholder="E-mail address" required="required">
+                </p>
+                <p>
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" name="street" placeholder="Street name" required="required">
+                </p>
+                <p>
+                    <label for="house">House</label><br>
+                    <input type="text" id="house" name="house" placeholder="House number" required="required">
+                </p>
+                <p>
+                    <label for="payment">Payment options</label><br>
+                    <select id="payment" name="payment">
+                        <option value="credit_card">Credit card</option>
+                        <option value="apple_pay">Apple Pay</option>
+                        <option value="swish">Swish</option>
+                        <option value="klarna">Klarna</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="nonbinary" name="gender" value="nonbinary">
+                    <label for="nonbinary">Non-binary</label><br>
+
+                    <input type="radio" id="undisclosed" name="gender" value="undisclosed" checked>
+                    <label for="undisclosed">Undisclosed</label><br>
+                </p>
+            </form>
+        </section>
+
+        <button type="submit">
+            Submit
+        </button>
+    </main>
+
+    <hr>
+
+    <footer>
+        © 2018 Hypothetical Burgers Inc.
+    </footer>
+
+</body>
+
+</html>
