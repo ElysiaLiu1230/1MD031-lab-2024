@@ -16,6 +16,7 @@
     <p>This is where you can select your burger.</p>
 
     <main>
+        <!-- Burger selection -->
         <div style="display:flex; justify-content:space-around;">
 
             <section>
@@ -40,7 +41,7 @@
 
             <section>
                 <h3>A Double w/ Cheese</h3>
-                <img src="./public/img/Fried Turkey Burger.webp" width="250">
+                <img src="./public/img/burger3.webp" width="250">
                 <ul>
                     <li>Two layers of pure meat</li>
                     <li>Lots of yummy cheese (contains lactose)</li>
@@ -48,28 +49,35 @@
                 </ul>
             </section>
         </div>
+
+        <!-- Customer information -->
         <h2>Customer information</h2>
-        <p>This is where you execute burger selection</p>
-        <h2>Delivery information</h2>
+        <p>This is where you provide necessary information.</p>
+
         <section id="contact">
             <form>
                 <p>
-                    <label for="firstname">Full name</label><br>
+                    <label for="fullname">Full name</label><br>
                     <input type="text" id="fullname" name="fullname" required="required"
-                        placeholder="First and Last name">
+                           placeholder="First and Last name">
                 </p>
+
                 <p>
                     <label for="email">E-mail</label><br>
-                    <input type="text" id="email" name="email" placeholder="E-mail address" required="required">
+                    <input type="email" id="email" name="email" placeholder="E-mail address" required="required">
                 </p>
+
                 <p>
                     <label for="street">Street</label><br>
                     <input type="text" id="street" name="street" placeholder="Street name" required="required">
                 </p>
+
                 <p>
-                    <label for="house">House</label><br>
-                    <input type="text" id="house" name="house" placeholder="House number" required="required">
+                    <label for="house">House number</label><br>
+                    <input type="number" id="house" name="house"
+                           placeholder="House number" required="required" min="1" step="1">
                 </p>
+
                 <p>
                     <label for="payment">Payment options</label><br>
                     <select id="payment" name="payment">
@@ -79,26 +87,27 @@
                         <option value="klarna">Klarna</option>
                     </select>
                 </p>
+
                 <p>
-                    <label for="gender">Gender</label><br>
+                    <span>Gender</span><br>
                     <input type="radio" id="male" name="gender" value="male">
                     <label for="male">Male</label><br>
 
                     <input type="radio" id="female" name="gender" value="female">
                     <label for="female">Female</label><br>
 
-                    <input type="radio" id="nonbinary" name="gender" value="nonbinary">
-                    <label for="nonbinary">Non-binary</label><br>
+                    <input type="radio" id="noinfo" name="gender" value="noinfo" checked>
+                    <label for="noinfo">Do not wish to provide</label><br>
+                </p>
 
-                    <input type="radio" id="undisclosed" name="gender" value="undisclosed" checked>
-                    <label for="undisclosed">Undisclosed</label><br>
+                <p>
+                    <button type="submit">
+                        Place my order!
+                    </button>
                 </p>
             </form>
         </section>
 
-        <button type="submit">
-            Submit
-        </button>
     </main>
 
     <hr>
