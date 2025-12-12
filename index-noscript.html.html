@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Welcome to BurgerHeaven Online</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to BurgerHeaven Online</h1>
+        <img src="./public/img/polacks.jpg" alt="header image">
+    </header>
+
+    <main>
+
+        <section id="burgers">
+            <h2>Select burger</h2>
+            <p>This is where you can select your burger.</p>
+
+            <div class="burger-wrapper">
+
+                <div class="burger">
+                    <h3>The Fire Burger</h3>
+                    <img src="./public/img/burger1.jpg" width="120">
+                    <ul>
+                        <li>Kobe beef of the highest quality</li>
+                        <li>Covered in fancy cheese (<span class="allergy">contains lactose</span>)</li>
+                        <li>Cold-leavened sourdough bread (<span class="allergy">contains gluten</span>)</li>
+                    </ul>
+                </div>
+
+                <div class="burger">
+                    <h3>Fried Turkey Burger</h3>
+                    <img src="./public/img/burger2.jpg" width="120">
+                    <ul>
+                        <li>Deep fried Turkish turkey</li>
+                        <li>A slice of pink stuff (<span class="allergy">contains lactose</span>)</li>
+                        <li>Shake-n-bake gluten-free bread</li>
+                    </ul>
+                </div>
+
+                <div class="burger">
+                    <h3>Double Cheese Burger</h3>
+                    <img src="./public/img/burger3.webp" width="120">
+                    <ul>
+                        <li>Two layers of pure meat</li>
+                        <li>Lots of yummy cheese (<span class="allergy">contains lactose</span>)</li>
+                        <li>Sweet bread bun (<span class="allergy">contains gluten</span>)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="order">
+            <h2>Customer information</h2>
+            <p>This is where you provide necessary information.</p>
+
+            <form>
+                <p>
+                    <label for="fullname">Full name</label><br>
+                    <input type="text" id="fullname" name="fullname" required="required"
+                        placeholder="First and Last name">
+                </p>
+
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="email" placeholder="E-mail address" required="required">
+                </p>
+
+                <p>
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" name="street" placeholder="Street name" required="required">
+                </p>
+
+                <p>
+                    <label for="house">House number</label><br>
+                    <input type="number" id="house" name="house" placeholder="House number" required="required" min="1"
+                        step="1">
+                </p>
+
+                <p>
+                    <label for="payment">Payment options</label><br>
+                    <select id="payment" name="payment">
+                        <option value="credit_card">Credit card</option>
+                        <option value="apple_pay">Apple Pay</option>
+                        <option value="swish">Swish</option>
+                        <option value="klarna">Klarna</option>
+                    </select>
+                </p>
+
+                <p>
+                    <span>Gender</span><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="noinfo" name="gender" value="noinfo" checked>
+                    <label for="noinfo">Do not wish to provide</label><br>
+                </p>
+
+                <p>
+                    <button type="submit">
+                        Place my order!
+                    </button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        © 2018 Hypothetical Burgers Inc.
+    </footer>
+
+</body>
+
+</html>
